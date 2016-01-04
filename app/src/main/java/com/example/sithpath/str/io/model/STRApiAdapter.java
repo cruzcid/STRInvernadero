@@ -1,5 +1,6 @@
 package com.example.sithpath.str.io.model;
 
+import retrofit.Callback;
 import retrofit.RestAdapter;
 
 /**
@@ -17,7 +18,6 @@ public class STRApiAdapter {
                     .setLogLevel(RestAdapter.LogLevel.BASIC)
                     .build();
             API_SERVICE = adapter.create(STRApiService.class);
-
         }
         return API_SERVICE;
     }
@@ -35,4 +35,7 @@ public class STRApiAdapter {
             }
         });
     }*/
+    public void postRegistroTemperatura(String fecha, Callback<RegTemperaturaResponse> cb){
+        getApiService().postRegistroTemperatura(fecha, cb);
+    }
 }

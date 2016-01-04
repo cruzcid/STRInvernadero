@@ -1,5 +1,11 @@
 <resources>
     <string name="app_name">STR</string>
     <string name="action_settings">Settings</string>
-    <string name="descripcion_recycler">Temperatura del Inverdadero</string>
+    <string name="descripcion_recycler">Control Inverdadero</string>
+    <string name="Fecha">Fecha :</string>
+    <string name="Hora">Hora  :</string>
+    <string name="Temperatura">°C :</string>
+    <string name="FechaEx">2001-23-12</string>
+    <string name="TemperaturaEx">34.4</string>
+    <string name="HoraEx">12:34</string>
 </resources>
