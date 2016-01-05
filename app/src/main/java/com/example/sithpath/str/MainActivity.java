@@ -57,7 +57,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Toast.makeText(MainActivity.this, "Actualizando datos", Toast.LENGTH_SHORT).show();
-
+                datosInvernadero.clear();
                 STRApiAdapter.postRegistroTemperatura("ho",new Callback<RegTemperaturaResponse>() {
                     @Override
                     public void success(RegTemperaturaResponse regTemperaturaResponse, Response response) {
