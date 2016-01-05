@@ -6,6 +6,11 @@ import com.google.gson.annotations.SerializedName;
  * Created by sithpath on 2/01/16.
  */
 public class DatosInvernadero {
+    public DatosInvernadero(String fecha, String hora, String temperatura ){
+        this.hora = hora;
+        this.fecha = fecha;
+        this.temperatura = temperatura;
+    }
     @SerializedName(JsonKeys.TEMPERATURA)
     private String temperatura;
     @SerializedName(JsonKeys.FECHA)

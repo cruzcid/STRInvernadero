@@ -11,5 +11,9 @@ public class RegTemperaturaResponse {
     @SerializedName(JsonKeys.DATOS)
     ArrayList<DatosInvernadero> datosInvernadero;
 
+    @SerializedName(JsonKeys.DATAEXIST)
+    String dataexist;
+
     public ArrayList<DatosInvernadero> getDatosInvernadero(){ return datosInvernadero;}
+    public String getDataexist(){return dataexist;}
 }

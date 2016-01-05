@@ -35,7 +35,7 @@ public class STRApiAdapter {
             }
         });
     }*/
-    public void postRegistroTemperatura(String fecha, Callback<RegTemperaturaResponse> cb){
+    public static void postRegistroTemperatura(String fecha, Callback<RegTemperaturaResponse> cb){
         getApiService().postRegistroTemperatura(fecha, cb);
     }
 }

@@ -5,5 +5,5 @@ package com.example.sithpath.str.io.model;
  */
 public class ApiConstants {
     public static final String SCADA_BASE_URL = "http://scadaipn.com";
-    public static final String REGISTRO_TEMPERATURA = "RegistrosTemperatura.php";
+    public static final String REGISTRO_TEMPERATURA = "/RegistrosTemperatura.php";
 }

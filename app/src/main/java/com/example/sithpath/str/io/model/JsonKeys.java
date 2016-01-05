@@ -8,5 +8,5 @@ public class JsonKeys {
     public static final String DATOS = "datos";
     public static final String FECHA = "fecha";
     public static final String HORA = "hora";
-
+    public static final String DATAEXIST = "dataexist";
 }
