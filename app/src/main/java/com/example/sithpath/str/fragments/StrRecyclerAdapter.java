@@ -3,6 +3,7 @@ package com.example.sithpath.str.fragments;
 import android.content.Context;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -52,7 +53,7 @@ public class StrRecyclerAdapter extends RecyclerView.Adapter<StrRecyclerAdapter.
         this.datosInvernaderoArrayList.addAll(datosInvernaderos);
         notifyDataSetChanged();
     }
-    public class StrRecyclerViewHolder extends RecyclerView.ViewHolder{
+    public class StrRecyclerViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener{
         TextView hora, fecha, temperatura;
         public StrRecyclerViewHolder(View itemView){
             super(itemView);
@@ -63,5 +64,10 @@ public class StrRecyclerAdapter extends RecyclerView.Adapter<StrRecyclerAdapter.
         public void setHora(String hora){ this.hora.setText(hora); }
         public void setFecha(String fecha){this.fecha.setText(fecha);}
         public void setTemperatura(String temperatura){this.temperatura.setText(temperatura);}
+
+        @Override
+        public void onClick(View v) {
+            Log.i("ViewHolder Adapter Position :) ",String.valueOf(getLayoutPosition()) );
+        }
     }
 }

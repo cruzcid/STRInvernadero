@@ -51,7 +51,6 @@ public class MainActivity extends AppCompatActivity {
         datosInvernadero.add(new DatosInvernadero("2001-11-10","23:33","33.2"));
         datosInvernadero.add(new DatosInvernadero("2001-11-11","23:34","31.7"));
         */
-
         ImageView refreshImg = (ImageView) findViewById(R.id.image_view_refresh);
         refreshImg.setOnClickListener(new View.OnClickListener() {
             @Override
